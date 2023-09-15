@@ -1,0 +1,103 @@
+
+
+
+main {
+  display: flex;
+}
+
+
+main > div {
+  height: 500px;
+  border: 2px solid gray;
+
+}
+
+
+.voting-area {
+  display: grid;
+  height: 500px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 2px red solid;
+}
+
+.parties {
+  display: flex;
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-image: linear-gradient(to right, white , green);
+  padding: 10px;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(1, 40, 9);
+}
+
+nav a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.vote-btn {
+  display: inline-block;
+  width: 50px;
+  font-size: 9px;
+  margin: 2px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	background: linear-gradient(-45deg, #ffffff, #0c7b04, #012d0a, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.home input {
+  margin: 10px;
+  
+}
+
+.home button {
+  width: 15%;
+  background: #012d0a;
+  color: white;
+}
+
+.home button:hover{
+  background: #ffffff;
+  color: rgb(1, 34, 8);
+}
+
+.sign-out{
+  width: 100px;
+  background: #012d0a;
+  color: white;
+  font-size: 11px;
+}
+
+.sign-out:hover{
+  background: #ffffff;
+  color: #012d0a;
+  font-size: 11px;
+}
