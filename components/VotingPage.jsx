@@ -75,38 +75,40 @@ function VotingPage({ user, onSignOut }) {
     return (
         <div>
             <main className='row'>
-                <div className='col-2' style={{ padding: '30px' }}>
+                <div className='col-lg-2 col-md-3 col-sm-12 d-none d-md-block' style={{ padding: '30px' }}>
                     <Image src={user.passport} alt='Passport' width={50} height={50} />
                     <p>Hello! {user.fullName}</p>
                     <p>Email: {user.email}</p>
                     <p>Voters ID: {user.votersId}</p>
                 </div>
-                <div className='col-10'>
+                <div className='col-lg-10 col-md-9 col-sm-12'>
                     <nav>
                         <a href="#">HOME</a>
                         <a href="#">ABOUT US</a>
                         <a href="#">CONTACT US</a>
 
-                        <button className='sign-out' onClick={onSignOut}>
+                        <button className='btn btn-danger' onClick={onSignOut}>
                             Sign out
                         </button>
                     </nav>
                     <div className='d-flex justify-content-between'>
                         <h4>Welcome</h4>
-                        
+                        <div className='showOnMobile'>
+                        <Image src={user.passport} alt='Passport' width={50} height={50} />
+                        <p>Hello! {user.fullName}</p>
+                        <p>Email: {user.email}</p>
+                        <p>Voters ID: {user.votersId}</p>
+                        </div>
                     </div>
 
                     <p>Vote wisely</p>
 
                     <div className='container voting-container'>
-                        <div >
-                            <div className=' text-center' style={{ border: '2px solid black' }}>
-                                PARTIES
-                            </div>
-
+                        <div className='text-center' style={{ border: '2px solid black' }}>
+                            PARTIES
                         </div>
 
-                        <div className='parties row'>
+                        <div className='row'>
                             {renderVoteButtons('LP')}
                             {renderVoteButtons('APP')}
                             {renderVoteButtons('PDP')}
