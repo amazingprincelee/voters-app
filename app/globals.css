@@ -75,11 +75,13 @@ nav a:hover{
 
 .home input {
   margin: 10px;
+  background-color: white;
+  color:#0c7b04
   
 }
 
 .home button {
-  width: 15%;
+  width: 230px;
   background: #012d0a;
   color: white;
 }
