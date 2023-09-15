@@ -103,3 +103,14 @@ nav a:hover{
   color: #012d0a;
   font-size: 11px;
 }
+
+.showOnMobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+ .showOnMobile{
+  display: block;
+ }
+}
